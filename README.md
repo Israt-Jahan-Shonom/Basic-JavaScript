@@ -1,6 +1,6 @@
 # Basic-JavaScript
 Hello! Welcome to my first repository on GitHub.
-This repository contains some problem solving examples of basic JavaScript from [Geospatial Programming Course](https://ramiz-moktader.github.io/geospatial-programming-course/) that covers fundamental concepts in programming using JavaScript.
+This repository proudly showcases the solutions to various problems in basic JavaScript which I solved during the completion of [Geospatial Programming Course](https://ramiz-moktader.github.io/geospatial-programming-course/) designed to instill fundamental concepts in programming using JavaScript, served as a robust foundation for honing my coding skills.
 
 ## Sessions
 ### Session 1: Variable, Data Type, Comparison Operator
