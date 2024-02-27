@@ -1,0 +1,119 @@
+/*
+By using a loop, write a code that takes 5 numbers from the user. 
+Display both the sorted and unsorted versions of the numbers.
+*/
+
+var prompt = require('prompt-sync')();
+
+ar=[]
+
+for(var i=0; i<5; i++){
+    var a=Number(prompt("Enter a number: "))
+    ar.push(a)
+}
+console.log("Unsorted version of the numbers: ", ar)
+console.log("Sorted version of the numbers: ", ar.sort())
+
+/*
+Write a code to sort the numbers of an array. 
+Display both the sorted and unsorted versions of the array.
+*/
+
+var numList = [3,4,2,5,7,9,22]
+
+console.log("Original array: ",numList)
+var sortedNum = numList.sort(function (a, b){
+     return a - b });
+console.log("Sorted array is: ", sortedNum)
+
+/*
+We have a matrix:
+[ [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9] ]
+
+Write a code that will increase the value of each element in this matrix by 1.  
+Display both the original and increased matrix. 
+*/
+
+var ar=[[1,2,3],
+       [4,5,6],
+       [7,8,9]]
+
+console.log(ar)
+
+var ar2= ar
+
+for(var i=0; i<ar.length; i++){
+    for( var j=0; j<3; j++){
+        ar2[i][j]=ar[i][j]+1}
+    }
+
+console.log(ar2)
+
+/*
+Another way of increasing the value of the matrix by 1*/
+
+var ar = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+console.log("Original Array: ")
+console.log(ar)
+
+
+for (var i = 0; i < ar.length; i++) {
+    for (var j = 0; j < ar[i].length; j++) {
+            ar[i][j] = ar[i][j] + 1
+        }
+    }
+
+console.log("Increased 3D Array: ")
+console.log(ar)
+
+/*
+mat = [
+  [2, 7, 89, 6],
+  [90, 45,3, 7],
+  [78, 56, 4, 2]
+]
+
+Write a code that stores the elements of the above 2D array in a 1D array. Display the final 1D array.
+*/
+
+var mat = [
+    [2, 7, 89, 6],
+    [90, 45,3, 7],
+    [78, 56, 4, 2]
+  ]
+
+var ar=[]
+
+for(var i=0; i<mat.length; i++){
+    for( var j=0; j<mat[i].length; j++){
+        console.log(mat[i][j])
+        ar.push(mat[i][j])
+        }  
+    }
+
+console.log("Final 1D array is: ", ar)
+
+/*
+Write a code that takes input for five numbers from the user using a loop. Check whether each number is even or odd and store the result (even/odd) in an array. Finally, display the array outside of the loop.
+*/
+
+var prompt = require('prompt-sync')();
+ar=[]
+
+for (var i=0; i<5; i++){
+    var Num = Number(prompt("Enter a number: "))
+    if(Num%2==0){
+        ar.push("Even")
+    }
+    else{
+        ar.push("Odd")
+    }
+}
+console.log(ar)
