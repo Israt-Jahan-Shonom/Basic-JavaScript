@@ -1,0 +1,60 @@
+/*
+Write a function that will take two numbers and three callback functions as parameters. 
+Calculate the summation, subtraction, and multiplication of the numbers using callback functions. 
+Finally, display the results.
+*/
+
+var prompt = require('prompt-sync')();
+num1= Number(prompt("Enter the first number: "))
+num2= Number(prompt("Enter the second number: "))
+
+function summation(num1, num2){
+    return num1+num2
+}
+function substract(num1, num2){
+    return num1-num2
+}
+function multiply(num1, num2){
+    return num1*num2
+}
+
+
+function calculate(num1, num2, summation, substract, multiply){
+    var sum = summation(num1,num2)
+    var sub = substract(num1,num2)
+    var mul = multiply(num1,num2)
+    console.log("Summation is: ", sum, "\n","Substraction is: ", sub, "\n","Multiplication is: ", mul)
+}
+
+calculate(num1,num2, summation, substract, multiply)
+
+/*
+Write a function that takes only the name of the user as a parameter and displays a welcome message. 
+The default value of the user's name will be “guest”.
+*/
+
+function greet(name="Guest"){
+    console.log("Welcome",name)
+}
+greet()
+
+/*
+Suppose you have an array containing a few numbers, now use the “. map()” method of the array to square all the numbers of the array. 
+*/
+
+var ar=[1,2,3,4]
+
+var square = ar.map(ar=>ar*ar)
+
+console.log("Square of the array is: ", square)
+
+/*
+Suppose we have an equation: Y = x^2 + 2x + 6. 
+Write a function that will take the value of x as a parameter and return the value of Y.
+*/
+
+function func(x){
+    var y = (x**2)+(2*x)+6
+    return y
+}
+console.log(func(6))
