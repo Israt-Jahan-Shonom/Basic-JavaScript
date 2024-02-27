@@ -27,7 +27,7 @@ Explore the concept of functions, a crucial aspect of modular programming. Learn
 Object is a fundamental data structure in JavaScript. Sessions cover creating objects, defining properties and methods, and understanding how objects enhance code organization and readability.
 [(Sixth session link)](https://github.com/Israt-Jahan-Shonom/Basic-JavaScript/blob/main/Session-6%3A%20Object)
 
-## Feedback and Contributions
+## Feedback and Suggestions
 Feedback is highly appreciated! If you have suggestions, improvements, or find any issues, please open an issue or submit a pull request.
 
 Happy coding!
